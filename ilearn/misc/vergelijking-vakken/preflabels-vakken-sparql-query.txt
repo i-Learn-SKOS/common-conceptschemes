@@ -1,0 +1,11 @@
+# get prefLabels from meemoo's of iLearn's vakken
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?prefLabel
+#FROM <https://data.hetarchief.be/term/onderwijs/vak/>
+FROM <http://ilearn.ilabt.imec.be/vocab/vak1/>
+WHERE {
+  ?s a skos:Concept .
+  ?s skos:prefLabel ?prefLabel
+}
+ORDER BY ?prefLabel
