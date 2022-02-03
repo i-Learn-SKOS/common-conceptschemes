@@ -2,7 +2,6 @@
 @prefix ocol: <https://data.hetarchief.be/id/onderwijs/collectie/> .
 @prefix ostr: <https://data.hetarchief.be/id/onderwijs/structuur/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 ocol:graad a skos:Collection,
@@ -257,10 +256,10 @@ ostr:secundair-3e-graad a skos:Concept ;
     skos:prefLabel "secundair 3e graad"@nl .
 
 o:structuur a skos:ConceptScheme ;
-    rdfs:label "thesaurus onderwijsstructuur"@nl ;
     skos:hasTopConcept ostr:basisonderwijs,
         ostr:deeltijds-kunstonderwijs,
         ostr:hoger-onderwijs,
         ostr:secundair-onderwijs,
-        ostr:volwassenenonderwijs .
+        ostr:volwassenenonderwijs ;
+    skos:prefLabel "thesaurus onderwijsstructuur"@nl .
 
