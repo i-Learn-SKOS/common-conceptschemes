@@ -1,6 +1,6 @@
-@prefix o: <https://data.hetarchief.be/id/onderwijs/> .
-@prefix ocol: <https://data.hetarchief.be/id/onderwijs/collectie/> .
-@prefix ostr: <https://data.hetarchief.be/id/onderwijs/structuur/> .
+@prefix ocol: <https://w3id.org/onderwijs-vlaanderen/id/collectie/> .
+@prefix ond: <https://w3id.org/onderwijs-vlaanderen/id/> .
+@prefix ostr: <https://w3id.org/onderwijs-vlaanderen/id/structuur/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
@@ -47,142 +47,150 @@ ocol:niveau a skos:Collection ;
 ocol:subniveau a skos:Collection ;
     skos:member ostr:basiseducatie,
         ostr:kleuteronderwijs,
-        ostr:lager-onderwijs ;
+        ostr:lager-onderwijs,
+        ostr:secundair-volwassenenonderwijs ;
     skos:prefLabel "onderwijs subniveaus"@nl .
 
 ostr:basiseducatie a skos:Concept ;
     skos:broader ostr:volwassenenonderwijs ;
     skos:definition "basiseducatie"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "basiseducatie"@nl .
 
 ostr:deeltijds-kunstonderwijs a skos:Concept ;
     skos:definition "deeltijds kunstonderwijs"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "deeltijds kunstonderwijs"@nl ;
-    skos:topConceptOf o:structuur .
+    skos:topConceptOf ond:structuur .
 
 ostr:hoger-onderwijs a skos:Concept ;
     skos:definition "hoger onderwijs"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "hoger onderwijs"@nl ;
-    skos:topConceptOf o:structuur .
+    skos:topConceptOf ond:structuur .
+
+ostr:secundair-volwassenenonderwijs a skos:Concept ;
+    skos:broader ostr:volwassenenonderwijs ;
+    skos:definition "secundair volwassenenonderwijs"@nl ;
+    skos:inScheme ond:structuur ;
+    skos:prefLabel "secundair volwassenenonderwijs"@nl .
 
 ostr:kleuter-3-jaar-of-jonger a skos:Concept ;
     skos:broader ostr:kleuteronderwijs ;
     skos:definition "kleuter 3 jaar of jonger"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "kleuter 3 jaar of jonger"@nl .
 
 ostr:kleuter-4-jaar a skos:Concept ;
     skos:broader ostr:kleuteronderwijs ;
     skos:definition "kleuter 4 jaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "kleuter 4 jaar"@nl .
 
 ostr:kleuter-5-jaar a skos:Concept ;
     skos:broader ostr:kleuteronderwijs ;
     skos:definition "kleuter 5 jaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "kleuter 5 jaar"@nl .
 
 ostr:lager-1e-leerjaar a skos:Concept ;
     skos:broader ostr:lager-1e-graad ;
     skos:definition "lager 1e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "lager 1e leerjaar"@nl .
 
 ostr:lager-2e-leerjaar a skos:Concept ;
     skos:broader ostr:lager-1e-graad ;
     skos:definition "lager 2e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "lager 2e leerjaar"@nl .
 
 ostr:lager-3e-leerjaar a skos:Concept ;
     skos:broader ostr:lager-2e-graad ;
     skos:definition "lager 3e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "lager 3e leerjaar"@nl .
 
 ostr:lager-4e-leerjaar a skos:Concept ;
     skos:broader ostr:lager-2e-graad ;
     skos:definition "lager 4e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "lager 4e leerjaar"@nl .
 
 ostr:lager-5e-leerjaar a skos:Concept ;
     skos:broader ostr:lager-3e-graad ;
     skos:definition "lager 5e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "lager 5e leerjaar"@nl .
 
 ostr:lager-6e-leerjaar a skos:Concept ;
     skos:broader ostr:lager-3e-graad ;
     skos:definition "lager 6e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "lager 6e leerjaar"@nl .
 
 ostr:secundair-1e-leerjaar a skos:Concept ;
     skos:broader ostr:secundair-1e-graad ;
     skos:definition "secundair 1e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "secundair 1e leerjaar"@nl .
 
 ostr:secundair-2e-leerjaar a skos:Concept ;
     skos:broader ostr:secundair-1e-graad ;
     skos:definition "secundair 2e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "secundair 2e leerjaar"@nl .
 
 ostr:secundair-3e-leerjaar a skos:Concept ;
     skos:broader ostr:secundair-2e-graad ;
     skos:definition "secundair 3e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "secundair 3e leerjaar"@nl .
 
 ostr:secundair-4e-leerjaar a skos:Concept ;
     skos:broader ostr:secundair-2e-graad ;
     skos:definition "secundair 4e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "secundair 4e leerjaar"@nl .
 
 ostr:secundair-5e-leerjaar a skos:Concept ;
     skos:broader ostr:secundair-3e-graad ;
     skos:definition "secundair 5e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "secundair 5e leerjaar"@nl .
 
 ostr:secundair-6e-leerjaar a skos:Concept ;
     skos:broader ostr:secundair-3e-graad ;
     skos:definition "secundair 6e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "secundair 6e leerjaar"@nl .
 
 ostr:secundair-7e-leerjaar a skos:Concept ;
     skos:broader ostr:secundair-3e-graad ;
     skos:definition "secundair 7e leerjaar"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:prefLabel "secundair 7e leerjaar"@nl .
-
-ostr:volwassenenonderwijs a skos:Concept ;
-    skos:definition "volwassenenonderwijs"@nl ;
-    skos:inScheme o:structuur ;
-    skos:narrower ostr:basiseducatie ;
-    skos:prefLabel "volwassenenonderwijs"@nl ;
-    skos:topConceptOf o:structuur .
 
 ostr:basisonderwijs a skos:Concept ;
     skos:definition "basisonderwijs"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:narrower ostr:kleuteronderwijs,
         ostr:lager-onderwijs ;
     skos:prefLabel "basisonderwijs"@nl ;
-    skos:topConceptOf o:structuur .
+    skos:topConceptOf ond:structuur .
+
+ostr:volwassenenonderwijs a skos:Concept ;
+    skos:definition "volwassenenonderwijs"@nl ;
+    skos:inScheme ond:structuur ;
+    skos:narrower ostr:basiseducatie,
+        ostr:secundair-volwassenenonderwijs ;
+    skos:prefLabel "volwassenenonderwijs"@nl ;
+    skos:topConceptOf ond:structuur .
 
 ostr:kleuteronderwijs a skos:Concept ;
     skos:broader ostr:basisonderwijs ;
     skos:definition "kleuteronderwijs"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:narrower ostr:kleuter-3-jaar-of-jonger,
         ostr:kleuter-4-jaar,
         ostr:kleuter-5-jaar ;
@@ -191,7 +199,7 @@ ostr:kleuteronderwijs a skos:Concept ;
 ostr:lager-1e-graad a skos:Concept ;
     skos:broader ostr:lager-onderwijs ;
     skos:definition "lager 1e graad"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:narrower ostr:lager-1e-leerjaar,
         ostr:lager-2e-leerjaar ;
     skos:prefLabel "lager 1e graad"@nl .
@@ -199,7 +207,7 @@ ostr:lager-1e-graad a skos:Concept ;
 ostr:lager-2e-graad a skos:Concept ;
     skos:broader ostr:lager-onderwijs ;
     skos:definition "lager 2e graad"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:narrower ostr:lager-3e-leerjaar,
         ostr:lager-4e-leerjaar ;
     skos:prefLabel "lager 2e graad"@nl .
@@ -207,7 +215,7 @@ ostr:lager-2e-graad a skos:Concept ;
 ostr:lager-3e-graad a skos:Concept ;
     skos:broader ostr:lager-onderwijs ;
     skos:definition "lager 3e graad"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:narrower ostr:lager-5e-leerjaar,
         ostr:lager-6e-leerjaar ;
     skos:prefLabel "lager 3e graad"@nl .
@@ -215,7 +223,7 @@ ostr:lager-3e-graad a skos:Concept ;
 ostr:lager-onderwijs a skos:Concept ;
     skos:broader ostr:basisonderwijs ;
     skos:definition "lager onderwijs"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:narrower ostr:lager-1e-graad,
         ostr:lager-2e-graad,
         ostr:lager-3e-graad ;
@@ -224,7 +232,7 @@ ostr:lager-onderwijs a skos:Concept ;
 ostr:secundair-1e-graad a skos:Concept ;
     skos:broader ostr:secundair-onderwijs ;
     skos:definition "secundair 1e graad"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:narrower ostr:secundair-1e-leerjaar,
         ostr:secundair-2e-leerjaar ;
     skos:prefLabel "secundair 1e graad"@nl .
@@ -232,30 +240,30 @@ ostr:secundair-1e-graad a skos:Concept ;
 ostr:secundair-2e-graad a skos:Concept ;
     skos:broader ostr:secundair-onderwijs ;
     skos:definition "secundair 2e graad"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:narrower ostr:secundair-3e-leerjaar,
         ostr:secundair-4e-leerjaar ;
     skos:prefLabel "secundair 2e graad"@nl .
 
 ostr:secundair-onderwijs a skos:Concept ;
     skos:definition "secundair onderwijs"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:narrower ostr:secundair-1e-graad,
         ostr:secundair-2e-graad,
         ostr:secundair-3e-graad ;
     skos:prefLabel "secundair onderwijs"@nl ;
-    skos:topConceptOf o:structuur .
+    skos:topConceptOf ond:structuur .
 
 ostr:secundair-3e-graad a skos:Concept ;
     skos:broader ostr:secundair-onderwijs ;
     skos:definition "secundair 3e graad"@nl ;
-    skos:inScheme o:structuur ;
+    skos:inScheme ond:structuur ;
     skos:narrower ostr:secundair-5e-leerjaar,
         ostr:secundair-6e-leerjaar,
         ostr:secundair-7e-leerjaar ;
     skos:prefLabel "secundair 3e graad"@nl .
 
-o:structuur a skos:ConceptScheme ;
+ond:structuur a skos:ConceptScheme ;
     skos:hasTopConcept ostr:basisonderwijs,
         ostr:deeltijds-kunstonderwijs,
         ostr:hoger-onderwijs,
