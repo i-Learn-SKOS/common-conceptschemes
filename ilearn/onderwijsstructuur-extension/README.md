@@ -11,3 +11,8 @@ Toevoeging van graad "secundair-3e-graad-3e-leerjaar" en verschuiving van "secun
 ## Aanpassing 2
 
 Toevoeging van stromen, finaliteiten en onderwijsvormen.
+
+## Aanpassing 3
+
+Toevoeging van opleidingsvormen en buitengewoon onderwijs.
+
