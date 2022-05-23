@@ -1,0 +1,6 @@
+
+ocol:graad a skos:OrderedCollection ;
+    skos:memberList ( ostr:lager-1e-graad ostr:lager-2e-graad ostr:lager-3e-graad ostr:secundair-1e-graad ostr:secundair-2e-graad ostr:secundair-3e-graad ostr:secundair-3e-graad-3e-leerjaar ) .
+
+ocol:leerjaar a skos:OrderedCollection ;
+    skos:memberList ( ostr:kleuter-3-jaar-of-jonger ostr:kleuter-4-jaar ostr:kleuter-5-jaar ostr:lager-1e-leerjaar ostr:lager-2e-leerjaar ostr:lager-3e-leerjaar ostr:lager-4e-leerjaar ostr:lager-5e-leerjaar ostr:lager-6e-leerjaar ostr:secundair-1e-leerjaar ostr:secundair-2e-leerjaar ostr:secundair-3e-leerjaar ostr:secundair-4e-leerjaar ostr:secundair-5e-leerjaar ostr:secundair-6e-leerjaar ostr:secundair-7e-leerjaar ) .
