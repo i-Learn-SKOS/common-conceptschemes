@@ -61,7 +61,35 @@ ocol:niveau a skos:Collection ;
         ostr:volwassenenonderwijs ;
     skos:prefLabel "onderwijsniveaus"@nl .
 
-ocol:onderwijsstructuur a skos:Collection ;
+ocol:onderwijsvorm a skos:Collection ;
+    skos:member ostr:secundair-2e-graad-arbeidsmarkt-bso,
+        ostr:secundair-2e-graad-doorstroom-aso,
+        ostr:secundair-2e-graad-doorstroom-kso,
+        ostr:secundair-2e-graad-doorstroom-tso,
+        ostr:secundair-2e-graad-dubbel-kso,
+        ostr:secundair-2e-graad-dubbel-tso,
+        ostr:secundair-3e-graad-3e-leerjaar-arbeidsmarkt-bso,
+        ostr:secundair-3e-graad-arbeidsmarkt-bso,
+        ostr:secundair-3e-graad-doorstroom-aso,
+        ostr:secundair-3e-graad-doorstroom-kso,
+        ostr:secundair-3e-graad-doorstroom-tso,
+        ostr:secundair-3e-graad-dubbel-kso,
+        ostr:secundair-3e-graad-dubbel-tso ;
+    skos:prefLabel "onderwijsvormen"@nl .
+
+ocol:opleidingsvorm a skos:Collection ;
+    skos:member ostr:opleidingsvorm-1,
+        ostr:opleidingsvorm-2,
+        ostr:opleidingsvorm-3,
+        ostr:opleidingsvorm-4 ;
+    skos:prefLabel "opleidingsvormen"@nl .
+
+ocol:stroom a skos:Collection ;
+    skos:member ostr:secundair-1e-graad-a-stroom,
+        ostr:secundair-1e-graad-b-stroom ;
+    skos:prefLabel "onderwijsstromen"@nl .
+
+ocol:structuur a skos:Collection ;
     skos:member ostr:basiseducatie,
         ostr:basisonderwijs,
         ostr:buitengewoon-basisonderwijs,
@@ -129,34 +157,6 @@ ocol:onderwijsstructuur a skos:Collection ;
         ostr:secundair-volwassenenonderwijs,
         ostr:volwassenenonderwijs ;
     skos:prefLabel "onderwijsstructuur"@nl .
-
-ocol:onderwijsvorm a skos:Collection ;
-    skos:member ostr:secundair-2e-graad-arbeidsmarkt-bso,
-        ostr:secundair-2e-graad-doorstroom-aso,
-        ostr:secundair-2e-graad-doorstroom-kso,
-        ostr:secundair-2e-graad-doorstroom-tso,
-        ostr:secundair-2e-graad-dubbel-kso,
-        ostr:secundair-2e-graad-dubbel-tso,
-        ostr:secundair-3e-graad-3e-leerjaar-arbeidsmarkt-bso,
-        ostr:secundair-3e-graad-arbeidsmarkt-bso,
-        ostr:secundair-3e-graad-doorstroom-aso,
-        ostr:secundair-3e-graad-doorstroom-kso,
-        ostr:secundair-3e-graad-doorstroom-tso,
-        ostr:secundair-3e-graad-dubbel-kso,
-        ostr:secundair-3e-graad-dubbel-tso ;
-    skos:prefLabel "onderwijsvormen"@nl .
-
-ocol:opleidingsvorm a skos:Collection ;
-    skos:member ostr:opleidingsvorm-1,
-        ostr:opleidingsvorm-2,
-        ostr:opleidingsvorm-3,
-        ostr:opleidingsvorm-4 ;
-    skos:prefLabel "opleidingsvormen"@nl .
-
-ocol:stroom a skos:Collection ;
-    skos:member ostr:secundair-1e-graad-a-stroom,
-        ostr:secundair-1e-graad-b-stroom ;
-    skos:prefLabel "onderwijsstromen"@nl .
 
 ocol:subniveau a skos:Collection ;
     skos:member ostr:basiseducatie,

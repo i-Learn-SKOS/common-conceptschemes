@@ -31,10 +31,10 @@ mappings:
         - [grel:valueParameter, $(mapping)]
         - [grel:valueParameter2, "schema"]
   # verzamelingen en hun leden (OrderedCollections worden toegevoegd buiten deze mapping omdat YARRRML rdf:List niet supporteert)
-  verzameling-onderwijsstructuur:
+  verzameling-structuur:
     sources:
       - onderwijsstructuur
-    s: ocol:onderwijsstructuur
+    s: ocol:structuur
     po:
       - [a, skos:Collection]
       - [skos:prefLabel, $(label), nl~lang]
@@ -193,10 +193,10 @@ mappings:
       parameters:
         - [grel:valueParameter, $(mapping)]
         - [grel:valueParameter2, "verzameling-onderwijsvorm"]
-  member-onderwijsstructuur:
+  member-structuur:
     sources:
       - onderwijsstructuur
-    s: ocol:onderwijsstructuur
+    s: ocol:structuur
     po:
       - p: skos:member
         o: ostr:$(niveau)~iri
