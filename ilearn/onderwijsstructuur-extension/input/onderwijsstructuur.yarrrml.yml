@@ -23,14 +23,32 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
         - [grel:valueParameter, $(mapping)]
         - [grel:valueParameter2, "schema"]
   # verzamelingen en hun leden (OrderedCollections worden toegevoegd buiten deze mapping omdat YARRRML rdf:List niet supporteert)
+  verzameling-onderwijsstructuur:
+    sources:
+      - onderwijsstructuur
+    s: ocol:onderwijsstructuur
+    po:
+      - [a, skos:Collection]
+      - [skos:prefLabel, $(label), nl~lang]
+      - p: skos:definition
+        o:
+          value: $(definitie)
+          language: nl
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+    condition:
+      function: idlab-fn:equal
+      parameters:
+        - [grel:valueParameter, $(mapping)]
+        - [grel:valueParameter2, "verzameling-onderwijsstructuur"]
   verzameling-niveau:
     sources:
       - onderwijsstructuur
@@ -42,8 +60,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -60,8 +78,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -78,8 +96,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -96,8 +114,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -114,8 +132,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -132,8 +150,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -150,8 +168,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -168,13 +186,34 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
         - [grel:valueParameter, $(mapping)]
         - [grel:valueParameter2, "verzameling-onderwijsvorm"]
+  member-onderwijsstructuur:
+    sources:
+      - onderwijsstructuur
+    s: ocol:onderwijsstructuur
+    po:
+      - p: skos:member
+        o: ostr:$(niveau)~iri
+      - p: skos:member
+        o: ostr:$(subniveau)~iri
+      - p: skos:member
+        o: ostr:$(opleidingsvorm)~iri
+      - p: skos:member
+        o: ostr:$(graad)~iri
+      - p: skos:member
+        o: ostr:$(leerjaar)~iri
+      - p: skos:member
+        o: ostr:$(stroom)~iri
+      - p: skos:member
+        o: ostr:$(finaliteit)~iri
+      - p: skos:member
+        o: ostr:$(onderwijsvorm)~iri
   member-niveau:
     sources:
       - onderwijsstructuur
@@ -277,8 +316,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -298,8 +337,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -319,8 +358,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -340,8 +379,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -360,8 +399,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -380,8 +419,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -401,8 +440,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -421,8 +460,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -442,8 +481,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -463,8 +502,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:
@@ -484,8 +523,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-          condition:
-            function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+        condition:
+          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
       function: idlab-fn:equal
       parameters:

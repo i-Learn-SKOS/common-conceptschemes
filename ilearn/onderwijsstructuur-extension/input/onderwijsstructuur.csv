@@ -1,5 +1,6 @@
 mapping,niveau,subniveau,opleidingsvorm,graad,leerjaar,stroom,finaliteit,onderwijsvorm,label,definitie
 schema,,,,,,,,,thesaurus onderwijsstructuur,
+verzameling-onderwijsstructuur,,,,,,,,,onderwijsstructuur,
 verzameling-niveau,,,,,,,,,onderwijsniveaus,
 verzameling-subniveau,,,,,,,,,onderwijs subniveaus,
 verzameling-opleidingsvorm,,,,,,,,,opleidingsvormen,
