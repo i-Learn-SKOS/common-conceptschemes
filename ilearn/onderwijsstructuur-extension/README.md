@@ -26,6 +26,10 @@ Toevoeging van stromen, finaliteiten en onderwijsvormen.
 
 Toevoeging van opleidingsvormen en buitengewoon onderwijs.
 
+### Aanpassing 4
+
+Toevoeging van de skos:Collection ocol:structuur, waartoe alle concepten uit de onderwijsstructuur behoren.
+
 ## Hoe na te bouwen
 
 Om het resultaat zelf na te bouwen op basis van de input, volg de [instructies in de tools directory](tools/README.md).
