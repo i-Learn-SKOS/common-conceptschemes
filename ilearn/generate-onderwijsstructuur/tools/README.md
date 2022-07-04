@@ -37,7 +37,7 @@ source virtualenv/bin/activate
 ```
 
 ## 3 - Make the output
-Save all input files, export the .xlsx file to a .csv and execute:
+Save all input files in `../input`, export the .xlsx file to a .csv and execute:
 ```shell
 ./make.sh
 ```
