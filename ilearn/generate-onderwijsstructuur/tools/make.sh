@@ -8,13 +8,13 @@ RML_MAPPER="rmlmapper-4.15.0-r361-all.jar"
 
 BASENAME=onderwijsstructuur
 DIR_IN=../input
-DIR_OUT=../schemes
+DIR_OUT=../../../common/schemes
 DIR_TEMP=./temp
 FILE_IN="${DIR_IN}/${BASENAME}.yarrrml.yml"
 FILE_RML="${DIR_TEMP}/${BASENAME}.rml.ttl"
 FILE_GENERATED="${DIR_TEMP}/${BASENAME}.generated.ttl"
 FILE_ADDENDUM="${DIR_IN}/${BASENAME}.addendum.ttl"
-FILE_OUT="${DIR_OUT}/${BASENAME}.ttl"
+FILE_OUT="${DIR_OUT}/onderwijsstructuur-final.skos.ttl"
 FILE_SKOSIFY_CONFIG="${DIR_IN}/${BASENAME}.skosify.cfg"
 
 if [ ! -d ${DIR_TEMP} ];
