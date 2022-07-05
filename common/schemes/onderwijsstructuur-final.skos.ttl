@@ -5,6 +5,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 ocol:finaliteit a skos:Collection ;
+    skos:definition "onderwijsfinaliteiten"@nl ;
     skos:member ostr:secundair-2e-graad-arbeidsmarkt,
         ostr:secundair-2e-graad-doorstroom,
         ostr:secundair-2e-graad-dubbel,
@@ -16,6 +17,7 @@ ocol:finaliteit a skos:Collection ;
 
 ocol:graad a skos:Collection,
         skos:OrderedCollection ;
+    skos:definition "onderwijsgraden"@nl ;
     skos:member ostr:buitengewoon-secundair-1e-graad,
         ostr:buitengewoon-secundair-2e-graad,
         ostr:buitengewoon-secundair-3e-graad,
@@ -32,6 +34,7 @@ ocol:graad a skos:Collection,
 
 ocol:leerjaar a skos:Collection,
         skos:OrderedCollection ;
+    skos:definition "onderwijs leerjaren"@nl ;
     skos:member ostr:kleuter-3-jaar-of-jonger,
         ostr:kleuter-4-jaar,
         ostr:kleuter-5-jaar,
@@ -52,6 +55,7 @@ ocol:leerjaar a skos:Collection,
     skos:prefLabel "onderwijs leerjaren"@nl .
 
 ocol:niveau a skos:Collection ;
+    skos:definition "onderwijsniveaus"@nl ;
     skos:member ostr:basisonderwijs,
         ostr:buitengewoon-basisonderwijs,
         ostr:buitengewoon-secundair-onderwijs,
@@ -62,6 +66,7 @@ ocol:niveau a skos:Collection ;
     skos:prefLabel "onderwijsniveaus"@nl .
 
 ocol:onderwijsvorm a skos:Collection ;
+    skos:definition "onderwijsvormen"@nl ;
     skos:member ostr:secundair-2e-graad-arbeidsmarkt-bso,
         ostr:secundair-2e-graad-doorstroom-aso,
         ostr:secundair-2e-graad-doorstroom-kso,
@@ -78,6 +83,7 @@ ocol:onderwijsvorm a skos:Collection ;
     skos:prefLabel "onderwijsvormen"@nl .
 
 ocol:opleidingsvorm a skos:Collection ;
+    skos:definition "opleidingsvormen"@nl ;
     skos:member ostr:opleidingsvorm-1,
         ostr:opleidingsvorm-2,
         ostr:opleidingsvorm-3,
@@ -85,11 +91,13 @@ ocol:opleidingsvorm a skos:Collection ;
     skos:prefLabel "opleidingsvormen"@nl .
 
 ocol:stroom a skos:Collection ;
+    skos:definition "onderwijsstromen"@nl ;
     skos:member ostr:secundair-1e-graad-a-stroom,
         ostr:secundair-1e-graad-b-stroom ;
     skos:prefLabel "onderwijsstromen"@nl .
 
 ocol:structuur a skos:Collection ;
+    skos:definition "onderwijsstructuur"@nl ;
     skos:member ostr:basiseducatie,
         ostr:basisonderwijs,
         ostr:buitengewoon-basisonderwijs,
@@ -159,6 +167,7 @@ ocol:structuur a skos:Collection ;
     skos:prefLabel "onderwijsstructuur"@nl .
 
 ocol:subniveau a skos:Collection ;
+    skos:definition "onderwijs subniveaus"@nl ;
     skos:member ostr:basiseducatie,
         ostr:buitengewoon-kleuteronderwijs,
         ostr:buitengewoon-lager-onderwijs,
@@ -177,37 +186,37 @@ ostr:buitengewoon-kleuteronderwijs a skos:Concept ;
     skos:broader ostr:buitengewoon-basisonderwijs ;
     skos:definition "buitengewoon kleuteronderwijs"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "kleuteronderwijs"@nl .
+    skos:prefLabel "buitengewoon kleuteronderwijs"@nl .
 
 ostr:buitengewoon-lager-onderwijs a skos:Concept ;
     skos:broader ostr:buitengewoon-basisonderwijs ;
     skos:definition "buitengewoon lager onderwijs"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "lager onderwijs"@nl .
+    skos:prefLabel "buitengewoon lager onderwijs"@nl .
 
 ostr:buitengewoon-secundair-1e-graad a skos:Concept ;
     skos:broader ostr:opleidingsvorm-4 ;
     skos:definition "buitengewoon secundair 1e graad"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "secundair 1e graad"@nl .
+    skos:prefLabel "buitengewoon secundair 1e graad"@nl .
 
 ostr:buitengewoon-secundair-2e-graad a skos:Concept ;
     skos:broader ostr:opleidingsvorm-4 ;
     skos:definition "buitengewoon secundair 2e graad"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "secundair 2e graad"@nl .
+    skos:prefLabel "buitengewoon secundair 2e graad"@nl .
 
 ostr:buitengewoon-secundair-3e-graad a skos:Concept ;
     skos:broader ostr:opleidingsvorm-4 ;
     skos:definition "buitengewoon secundair 3e graad"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "secundair 3e graad"@nl .
+    skos:prefLabel "buitengewoon secundair 3e graad"@nl .
 
 ostr:buitengewoon-secundair-3e-graad-3e-leerjaar a skos:Concept ;
     skos:broader ostr:opleidingsvorm-4 ;
     skos:definition "buitengewoon secundair 3e graad 3e leerjaar"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "secundair 3e graad 3e leerjaar"@nl .
+    skos:prefLabel "buitengewoon secundair 3e graad 3e leerjaar"@nl .
 
 ostr:deeltijds-kunstonderwijs a skos:Concept ;
     skos:definition "deeltijds kunstonderwijs"@nl ;
@@ -243,91 +252,91 @@ ostr:secundair-1e-graad-a-stroom a skos:Concept ;
     skos:broader ostr:secundair-1e-graad ;
     skos:definition "secundair 1e graad a-stroom"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "a-stroom"@nl .
+    skos:prefLabel "secundair 1e graad a-stroom"@nl .
 
 ostr:secundair-1e-graad-b-stroom a skos:Concept ;
     skos:broader ostr:secundair-1e-graad ;
     skos:definition "secundair 1e graad b-stroom"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "b-stroom"@nl .
+    skos:prefLabel "secundair 1e graad b-stroom"@nl .
 
 ostr:secundair-2e-graad-arbeidsmarkt-bso a skos:Concept ;
     skos:broader ostr:secundair-2e-graad-arbeidsmarkt ;
     skos:definition "secundair 2e graad finaliteit arbeidsmarkt bso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "bso"@nl .
+    skos:prefLabel "secundair 2e graad finaliteit arbeidsmarkt bso"@nl .
 
 ostr:secundair-2e-graad-doorstroom-aso a skos:Concept ;
     skos:broader ostr:secundair-2e-graad-doorstroom ;
     skos:definition "secundair 2e graad finaliteit doorstroom aso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "aso"@nl .
+    skos:prefLabel "secundair 2e graad finaliteit doorstroom aso"@nl .
 
 ostr:secundair-2e-graad-doorstroom-kso a skos:Concept ;
     skos:broader ostr:secundair-2e-graad-doorstroom ;
     skos:definition "secundair 2e graad finaliteit doorstroom kso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "kso"@nl .
+    skos:prefLabel "secundair 2e graad finaliteit doorstroom kso"@nl .
 
 ostr:secundair-2e-graad-doorstroom-tso a skos:Concept ;
     skos:broader ostr:secundair-2e-graad-doorstroom ;
     skos:definition "secundair 2e graad finaliteit doorstroom tso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "tso"@nl .
+    skos:prefLabel "secundair 2e graad finaliteit doorstroom tso"@nl .
 
 ostr:secundair-2e-graad-dubbel-kso a skos:Concept ;
     skos:broader ostr:secundair-2e-graad-dubbel ;
     skos:definition "secundair 2e graad dubbele finaliteit kso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "kso"@nl .
+    skos:prefLabel "secundair 2e graad dubbele finaliteit kso"@nl .
 
 ostr:secundair-2e-graad-dubbel-tso a skos:Concept ;
     skos:broader ostr:secundair-2e-graad-dubbel ;
     skos:definition "secundair 2e graad dubbele finaliteit tso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "tso"@nl .
+    skos:prefLabel "secundair 2e graad dubbele finaliteit tso"@nl .
 
 ostr:secundair-3e-graad-3e-leerjaar-arbeidsmarkt-bso a skos:Concept ;
     skos:broader ostr:secundair-3e-graad-3e-leerjaar-arbeidsmarkt ;
     skos:definition "secundair 3e graad 3e leerjaar finaliteit arbeidsmarkt bso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "bso"@nl .
+    skos:prefLabel "secundair 3e graad 3e leerjaar finaliteit arbeidsmarkt bso"@nl .
 
 ostr:secundair-3e-graad-arbeidsmarkt-bso a skos:Concept ;
     skos:broader ostr:secundair-3e-graad-arbeidsmarkt ;
     skos:definition "secundair 3e graad finaliteit arbeidsmarkt bso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "bso"@nl .
+    skos:prefLabel "secundair 3e graad finaliteit arbeidsmarkt bso"@nl .
 
 ostr:secundair-3e-graad-doorstroom-aso a skos:Concept ;
     skos:broader ostr:secundair-3e-graad-doorstroom ;
     skos:definition "secundair 3e graad finaliteit doorstroom aso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "aso"@nl .
+    skos:prefLabel "secundair 3e graad finaliteit doorstroom aso"@nl .
 
 ostr:secundair-3e-graad-doorstroom-kso a skos:Concept ;
     skos:broader ostr:secundair-3e-graad-doorstroom ;
     skos:definition "secundair 3e graad finaliteit doorstroom kso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "kso"@nl .
+    skos:prefLabel "secundair 3e graad finaliteit doorstroom kso"@nl .
 
 ostr:secundair-3e-graad-doorstroom-tso a skos:Concept ;
     skos:broader ostr:secundair-3e-graad-doorstroom ;
     skos:definition "secundair 3e graad finaliteit doorstroom tso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "tso"@nl .
+    skos:prefLabel "secundair 3e graad finaliteit doorstroom tso"@nl .
 
 ostr:secundair-3e-graad-dubbel-kso a skos:Concept ;
     skos:broader ostr:secundair-3e-graad-dubbel ;
     skos:definition "secundair 3e graad dubbele finaliteit kso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "kso"@nl .
+    skos:prefLabel "secundair 3e graad dubbele finaliteit kso"@nl .
 
 ostr:secundair-3e-graad-dubbel-tso a skos:Concept ;
     skos:broader ostr:secundair-3e-graad-dubbel ;
     skos:definition "secundair 3e graad dubbele finaliteit tso"@nl ;
     skos:inScheme ond:structuur ;
-    skos:prefLabel "tso"@nl .
+    skos:prefLabel "secundair 3e graad dubbele finaliteit tso"@nl .
 
 ostr:secundair-volwassenenonderwijs a skos:Concept ;
     skos:broader ostr:volwassenenonderwijs ;
@@ -400,7 +409,7 @@ ostr:secundair-2e-graad-arbeidsmarkt a skos:Concept ;
     skos:definition "secundair 2e graad finaliteit arbeidsmarkt"@nl ;
     skos:inScheme ond:structuur ;
     skos:narrower ostr:secundair-2e-graad-arbeidsmarkt-bso ;
-    skos:prefLabel "finaliteit arbeidsmarkt"@nl .
+    skos:prefLabel "secundair 2e graad finaliteit arbeidsmarkt"@nl .
 
 ostr:secundair-2e-leerjaar a skos:Concept ;
     skos:broader ostr:secundair-1e-graad ;
@@ -413,14 +422,14 @@ ostr:secundair-3e-graad-3e-leerjaar-arbeidsmarkt a skos:Concept ;
     skos:definition "secundair 3e graad 3e leerjaar finaliteit arbeidsmarkt"@nl ;
     skos:inScheme ond:structuur ;
     skos:narrower ostr:secundair-3e-graad-3e-leerjaar-arbeidsmarkt-bso ;
-    skos:prefLabel "finaliteit arbeidsmarkt"@nl .
+    skos:prefLabel "secundair 3e graad 3e leerjaar finaliteit arbeidsmarkt"@nl .
 
 ostr:secundair-3e-graad-arbeidsmarkt a skos:Concept ;
     skos:broader ostr:secundair-3e-graad ;
     skos:definition "secundair 3e graad finaliteit arbeidsmarkt"@nl ;
     skos:inScheme ond:structuur ;
     skos:narrower ostr:secundair-3e-graad-arbeidsmarkt-bso ;
-    skos:prefLabel "finaliteit arbeidsmarkt"@nl .
+    skos:prefLabel "secundair 3e graad finaliteit arbeidsmarkt"@nl .
 
 ostr:secundair-3e-leerjaar a skos:Concept ;
     skos:broader ostr:secundair-2e-graad ;
@@ -474,7 +483,7 @@ ostr:secundair-2e-graad-dubbel a skos:Concept ;
     skos:inScheme ond:structuur ;
     skos:narrower ostr:secundair-2e-graad-dubbel-kso,
         ostr:secundair-2e-graad-dubbel-tso ;
-    skos:prefLabel "dubbele finaliteit"@nl .
+    skos:prefLabel "secundair 2e graad dubbele finaliteit"@nl .
 
 ostr:secundair-3e-graad-dubbel a skos:Concept ;
     skos:broader ostr:secundair-3e-graad ;
@@ -482,7 +491,7 @@ ostr:secundair-3e-graad-dubbel a skos:Concept ;
     skos:inScheme ond:structuur ;
     skos:narrower ostr:secundair-3e-graad-dubbel-kso,
         ostr:secundair-3e-graad-dubbel-tso ;
-    skos:prefLabel "dubbele finaliteit"@nl .
+    skos:prefLabel "secundair 3e graad dubbele finaliteit"@nl .
 
 ostr:volwassenenonderwijs a skos:Concept ;
     skos:definition "volwassenenonderwijs"@nl ;
@@ -541,7 +550,7 @@ ostr:secundair-2e-graad-doorstroom a skos:Concept ;
     skos:narrower ostr:secundair-2e-graad-doorstroom-aso,
         ostr:secundair-2e-graad-doorstroom-kso,
         ostr:secundair-2e-graad-doorstroom-tso ;
-    skos:prefLabel "finaliteit doorstroom"@nl .
+    skos:prefLabel "secundair 2e graad finaliteit doorstroom"@nl .
 
 ostr:secundair-3e-graad-3e-leerjaar a skos:Concept ;
     skos:broader ostr:secundair-onderwijs ;
@@ -558,7 +567,7 @@ ostr:secundair-3e-graad-doorstroom a skos:Concept ;
     skos:narrower ostr:secundair-3e-graad-doorstroom-aso,
         ostr:secundair-3e-graad-doorstroom-kso,
         ostr:secundair-3e-graad-doorstroom-tso ;
-    skos:prefLabel "finaliteit doorstroom"@nl .
+    skos:prefLabel "secundair 3e graad finaliteit doorstroom"@nl .
 
 ostr:buitengewoon-secundair-onderwijs a skos:Concept ;
     skos:definition "buitengewoon secundair onderwijs"@nl ;
@@ -623,6 +632,7 @@ ostr:secundair-3e-graad a skos:Concept ;
     skos:prefLabel "secundair 3e graad"@nl .
 
 ond:structuur a skos:ConceptScheme ;
+    skos:definition "thesaurus onderwijsstructuur"@nl ;
     skos:hasTopConcept ostr:basisonderwijs,
         ostr:buitengewoon-basisonderwijs,
         ostr:buitengewoon-secundair-onderwijs,
