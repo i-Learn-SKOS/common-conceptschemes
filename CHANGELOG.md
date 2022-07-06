@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-## [1.0.0] - 2022-07-(TODO)
+## [1.0.0] - 2022-07-06
 
 ### Added
 - This CHANGELOG.md
@@ -14,10 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automatic generation of onderwijsstructuur
 - Onderwijsstructuur: added "graad" "secundair-3e-graad-3e-leerjaar".
 - Onderwijsstructuur: added "stromen", "finaliteiten" and "onderwijsvormen".
-- Onderwijsstructuur: added "buitengewoon onderwijw" and "opleidingsvormen".
+- Onderwijsstructuur: added "buitengewoon onderwijs" and "opleidingsvormen".
 - Onderwijsstructuur: added a skos:Collection ocol:structuur, and made all concepts member of it.
-- TODO: version triples in onderwijsstructuur en vakken.
-- TODO: skosxl for abbreviated labels
+- Set a version on the concept schemes using pav:version.
+- Added short labels to concepts that have a long (disambiguated) skos:prefLabel.
 
 ### Changed
 - Onderwijsstructuur: changed "secundair-7e-leerjaar" to become a narrower concept of the new "graad" "secundair-3e-graad-3e-leerjaar", rather than from "graad" "secundair-3e-graad".
