@@ -4,7 +4,7 @@
 set -e
 
 YARRRML_PARSER="yarrrml-parser/bin/parser.js"
-RML_MAPPER="rmlmapper-4.15.0-r361-all.jar"
+RML_MAPPER="rmlmapper-5.0.0-r362-all.jar"
 
 BASENAME=onderwijsstructuur
 DIR_IN=../input

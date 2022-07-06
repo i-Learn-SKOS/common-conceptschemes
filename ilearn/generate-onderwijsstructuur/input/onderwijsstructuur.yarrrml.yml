@@ -4,14 +4,18 @@ prefixes:
   ostr: "https://w3id.org/onderwijs-vlaanderen/id/structuur/"
   rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   skos: "http://www.w3.org/2004/02/skos/core#"
+  skosxl: "http://www.w3.org/2008/05/skos-xl#"
+  pav: "http://purl.org/pav/"
   idlab-fn: "http://example.com/idlab/function/"
   grel: "http://users.ugent.be/~bjdmeest/function/grel.ttl#"
+  dct: "http://purl.org/dc/terms/"
+  label-type: "http://publications.europa.eu/resource/authority/label-type/"
 
 sources:
   onderwijsstructuur: ['../input/onderwijsstructuur.csv~csv']
 
 mappings:
-  # schema
+  # --- schema
   schema:
     sources:
       - onderwijsstructuur
@@ -19,18 +23,14 @@ mappings:
     po:
       - [a, skos:ConceptScheme]
       - [skos:prefLabel, $(label), nl~lang]
+      - [pav:version, $(versie)]
       - p: skos:definition
         o:
           value: $(definitie)
           language: nl
-        condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "schema"]
-  # verzamelingen en hun leden (OrderedCollections worden toegevoegd buiten deze mapping omdat YARRRML rdf:List niet supporteert)
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "schema")
+  # --- verzamelingen en hun leden (OrderedCollections worden toegevoegd buiten deze mapping omdat YARRRML rdf:List niet supporteert)
   verzameling-structuur:
     sources:
       - onderwijsstructuur
@@ -42,13 +42,9 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-        condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "verzameling-onderwijsstructuur"]
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "verzameling-onderwijsstructuur")
+  # verzameling niveau
   verzameling-niveau:
     sources:
       - onderwijsstructuur
@@ -60,13 +56,9 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-        condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "verzameling-niveau"]
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "verzameling-niveau")
+  # verzameling subniveau
   verzameling-subniveau:
     sources:
       - onderwijsstructuur
@@ -78,13 +70,9 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-        condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "verzameling-subniveau"]
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "verzameling-subniveau")
+  # verzameling opleidingsvorm
   verzameling-opleidingsvorm:
     sources:
       - onderwijsstructuur
@@ -96,13 +84,9 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-        condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "verzameling-opleidingsvorm"]
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "verzameling-opleidingsvorm")
+  # verzameling graad
   verzameling-graad:
     sources:
       - onderwijsstructuur
@@ -114,13 +98,9 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-        condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "verzameling-graad"]
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "verzameling-graad")
+  # verzameling leerjaar
   verzameling-leerjaar:
     sources:
       - onderwijsstructuur
@@ -132,13 +112,9 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-        condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "verzameling-leerjaar"]
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "verzameling-leerjaar")
+  # verzameling stroom
   verzameling-stroom:
     sources:
       - onderwijsstructuur
@@ -150,13 +126,9 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-        condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "verzameling-stroom"]
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "verzameling-stroom")
+  # verzameling finaliteit
   verzameling-finaliteit:
     sources:
       - onderwijsstructuur
@@ -168,13 +140,9 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-        condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "verzameling-finaliteit"]
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "verzameling-finaliteit")
+  # verzameling onderwijsvorm
   verzameling-onderwijsvorm:
     sources:
       - onderwijsstructuur
@@ -186,13 +154,8 @@ mappings:
         o:
           value: $(definitie)
           language: nl
-        condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "verzameling-onderwijsvorm"]
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "verzameling-onderwijsvorm")
   member-structuur:
     sources:
       - onderwijsstructuur
@@ -221,10 +184,7 @@ mappings:
     po:
       - [skos:member, ostr:$(niveau)~iri]
     condition:
-      function: grel:string_startsWith
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:string_sub, "niveau"]
+      function: grel:string_startsWith(valueParameter = $(mapping), string_sub = "niveau")
   member-subniveau:
     sources:
       - onderwijsstructuur
@@ -232,10 +192,7 @@ mappings:
     po:
       - [skos:member, ostr:$(subniveau)~iri]
     condition:
-      function: grel:string_startsWith
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:string_sub, "subniveau"]
+      function: grel:string_startsWith(valueParameter = $(mapping), string_sub = "subniveau")
   member-opleidingsvorm:
     sources:
       - onderwijsstructuur
@@ -243,10 +200,7 @@ mappings:
     po:
       - [skos:member, ostr:$(opleidingsvorm)~iri]
     condition:
-      function: grel:string_startsWith
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:string_sub, "opleidingsvorm"]
+      function: grel:string_startsWith(valueParameter = $(mapping), string_sub = "opleidingsvorm")
   member-graad:
     sources:
       - onderwijsstructuur
@@ -254,10 +208,7 @@ mappings:
     po:
       - [skos:member, ostr:$(graad)~iri]
     condition:
-      function: grel:string_startsWith
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:string_sub, "graad"]
+      function: grel:string_startsWith(valueParameter = $(mapping), string_sub = "graad")
   member-leerjaar:
     sources:
       - onderwijsstructuur
@@ -265,10 +216,7 @@ mappings:
     po:
       - [skos:member, ostr:$(leerjaar)~iri]
     condition:
-      function: grel:string_startsWith
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:string_sub, "leerjaar"]
+      function: grel:string_startsWith(valueParameter = $(mapping), string_sub = "leerjaar")
   member-stroom:
     sources:
       - onderwijsstructuur
@@ -276,10 +224,7 @@ mappings:
     po:
       - [skos:member, ostr:$(stroom)~iri]
     condition:
-      function: grel:string_startsWith
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:string_sub, "stroom"]
+      function: grel:string_startsWith(valueParameter = $(mapping), string_sub = "stroom")
   member-finaliteit:
     sources:
       - onderwijsstructuur
@@ -287,10 +232,7 @@ mappings:
     po:
       - [skos:member, ostr:$(finaliteit)~iri]
     condition:
-      function: grel:string_startsWith
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:string_sub, "finaliteit"]
+      function: grel:string_startsWith(valueParameter = $(mapping), string_sub = "finaliteit")
   member-onderwijsvorm:
     sources:
       - onderwijsstructuur
@@ -298,11 +240,9 @@ mappings:
     po:
       - [skos:member, ostr:$(onderwijsvorm)~iri]
     condition:
-      function: grel:string_startsWith
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:string_sub, "onderwijsvorm"]
-  # niveaus
+      function: grel:string_startsWith(valueParameter = $(mapping), string_sub = "onderwijsvorm")
+  # --- onderwijsstructuur lagen
+  # niveau
   niveau:
     sources:
       - onderwijsstructuur
@@ -316,14 +256,19 @@ mappings:
         o:
           value: $(definitie)
           language: nl
+      - p: skosxl:altLabel
+        o:
+          value: ostr:$(niveau)-short-label
+          type: iri
         condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+          function: grel:boolean_not
+          parameters:
+            - parameter: grel:bool_b
+              value:
+                function: idlab-fn:isNull(str = $(kortLabel))
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "niveau"]
-  # subniveaus
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "niveau")
+  # subniveau
   subniveau:
     sources:
       - onderwijsstructuur
@@ -337,14 +282,19 @@ mappings:
         o:
           value: $(definitie)
           language: nl
+      - p: skosxl:altLabel
+        o:
+          value: ostr:$(subniveau)-short-label
+          type: iri
         condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+          function: grel:boolean_not
+          parameters:
+            - parameter: grel:bool_b
+              value:
+                function: idlab-fn:isNull(str = $(kortLabel))
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "subniveau"]
-  # opleidingsvormen
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "subniveau")
+  # opleidingsvorm
   opleidingsvorm:
     sources:
       - onderwijsstructuur
@@ -358,14 +308,19 @@ mappings:
         o:
           value: $(definitie)
           language: nl
+      - p: skosxl:altLabel
+        o:
+          value: ostr:$(opleidingsvorm)-short-label
+          type: iri
         condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+          function: grel:boolean_not
+          parameters:
+            - parameter: grel:bool_b
+              value:
+                function: idlab-fn:isNull(str = $(kortLabel))
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "opleidingsvorm"]
-  # graden
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "opleidingsvorm")
+  # graad
   graad-onder-subniveau:
     sources:
       - onderwijsstructuur
@@ -379,13 +334,18 @@ mappings:
         o:
           value: $(definitie)
           language: nl
+      - p: skosxl:altLabel
+        o:
+          value: ostr:$(graad)-short-label
+          type: iri
         condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+          function: grel:boolean_not
+          parameters:
+            - parameter: grel:bool_b
+              value:
+                function: idlab-fn:isNull(str = $(kortLabel))
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "graad-onder-subniveau"]
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "graad-onder-subniveau")
   graad-onder-niveau:
     sources:
       - onderwijsstructuur
@@ -399,13 +359,18 @@ mappings:
         o:
           value: $(definitie)
           language: nl
+      - p: skosxl:altLabel
+        o:
+          value: ostr:$(graad)-short-label
+          type: iri
         condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+          function: grel:boolean_not
+          parameters:
+            - parameter: grel:bool_b
+              value:
+                function: idlab-fn:isNull(str = $(kortLabel))
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "graad-onder-niveau"]
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "graad-onder-niveau")
   graad-onder-opleidingsvorm:
     sources:
       - onderwijsstructuur
@@ -419,14 +384,19 @@ mappings:
         o:
           value: $(definitie)
           language: nl
+      - p: skosxl:altLabel
+        o:
+          value: ostr:$(graad)-short-label
+          type: iri
         condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+          function: grel:boolean_not
+          parameters:
+            - parameter: grel:bool_b
+              value:
+                function: idlab-fn:isNull(str = $(kortLabel))
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "graad-onder-opleidingsvorm"]
-  # leerjaren
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "graad-onder-opleidingsvorm")
+  # leerjaar
   leerjaar-onder-subniveau:
     sources:
       - onderwijsstructuur
@@ -440,13 +410,18 @@ mappings:
         o:
           value: $(definitie)
           language: nl
+      - p: skosxl:altLabel
+        o:
+          value: ostr:$(leerjaar)-short-label
+          type: iri
         condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+          function: grel:boolean_not
+          parameters:
+            - parameter: grel:bool_b
+              value:
+                function: idlab-fn:isNull(str = $(kortLabel))
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "leerjaar-onder-subniveau"]
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "leerjaar-onder-subniveau")
   leerjaar-onder-graad:
     sources:
       - onderwijsstructuur
@@ -460,14 +435,19 @@ mappings:
         o:
           value: $(definitie)
           language: nl
+      - p: skosxl:altLabel
+        o:
+          value: ostr:$(leerjaar)-short-label
+          type: iri
         condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+          function: grel:boolean_not
+          parameters:
+            - parameter: grel:bool_b
+              value:
+                function: idlab-fn:isNull(str = $(kortLabel))
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "leerjaar-onder-graad"]
-  # stromen
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "leerjaar-onder-graad")
+  # stroom
   stroom:
     sources:
       - onderwijsstructuur
@@ -481,14 +461,19 @@ mappings:
         o:
           value: $(definitie)
           language: nl
+      - p: skosxl:altLabel
+        o:
+          value: ostr:$(stroom)-short-label
+          type: iri
         condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+          function: grel:boolean_not
+          parameters:
+            - parameter: grel:bool_b
+              value:
+                function: idlab-fn:isNull(str = $(kortLabel))
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "stroom"]
-  # finaliteiten
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "stroom")
+  # finaliteit
   finaliteit:
     sources:
       - onderwijsstructuur
@@ -502,14 +487,19 @@ mappings:
         o:
           value: $(definitie)
           language: nl
+      - p: skosxl:altLabel
+        o:
+          value: ostr:$(finaliteit)-short-label
+          type: iri
         condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+          function: grel:boolean_not
+          parameters:
+            - parameter: grel:bool_b
+              value:
+                function: idlab-fn:isNull(str = $(kortLabel))
     condition:
-      function: idlab-fn:equal
-      parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "finaliteit"]
-  # onderwijsvormen
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "finaliteit"]
+  # onderwijsvorm
   onderwijsvorm:
     sources:
       - onderwijsstructuur
@@ -523,10 +513,216 @@ mappings:
         o:
           value: $(definitie)
           language: nl
+      - p: skosxl:altLabel
+        o:
+          value: ostr:$(onderwijsvorm)-short-label
+          type: iri
         condition:
-          function: idlab-fn:notEqual(grel:valueParameter = $(definitie), grel:valueParameter2 = "")
+          function: grel:boolean_not
+          parameters:
+            - parameter: grel:bool_b
+              value:
+                function: idlab-fn:isNull(str = $(kortLabel))
     condition:
-      function: idlab-fn:equal
+      function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "onderwijsvorm")
+  # --- short labels
+  # short label niveau
+  niveau-short-label:
+    sources:
+      - onderwijsstructuur
+    s: ostr:$(niveau)-short-label
+    po:
+      - [a, skosxl:Label]
+      - [dct:type, label-type:SHORTLABEL~iri]
+      - p: skosxl:literalForm
+        o:
+          value: $(kortLabel)
+          language: nl
+    condition:
+      function: grel:boolean_and
       parameters:
-        - [grel:valueParameter, $(mapping)]
-        - [grel:valueParameter2, "onderwijsvorm"]
+        - parameter: grel:param_rep_b
+          value:
+            function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "niveau")
+        - parameter: grel:param_rep_b
+          value:
+            function: grel:boolean_not
+            parameters:
+              - parameter: grel:bool_b
+                value:
+                  function: idlab-fn:isNull(str = $(kortLabel))
+  # short label subniveau
+  subniveau-short-label:
+    sources:
+      - onderwijsstructuur
+    s: ostr:$(subniveau)-short-label
+    po:
+      - [a, skosxl:Label]
+      - [dct:type, label-type:SHORTLABEL~iri]
+      - p: skosxl:literalForm
+        o:
+          value: $(kortLabel)
+          language: nl
+    condition:
+      function: grel:boolean_and
+      parameters:
+        - parameter: grel:param_rep_b
+          value:
+            function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "subniveau")
+        - parameter: grel:param_rep_b
+          value:
+            function: grel:boolean_not
+            parameters:
+              - parameter: grel:bool_b
+                value:
+                  function: idlab-fn:isNull(str = $(kortLabel))
+  # short label opleidingsvorm
+  opleidingsvorm-short-label:
+    sources:
+      - onderwijsstructuur
+    s: ostr:$(opleidingsvorm)-short-label
+    po:
+      - [a, skosxl:Label]
+      - [dct:type, label-type:SHORTLABEL~iri]
+      - p: skosxl:literalForm
+        o:
+          value: $(kortLabel)
+          language: nl
+    condition:
+      function: grel:boolean_and
+      parameters:
+        - parameter: grel:param_rep_b
+          value:
+            function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "opleidingsvorm")
+        - parameter: grel:param_rep_b
+          value:
+            function: grel:boolean_not
+            parameters:
+              - parameter: grel:bool_b
+                value:
+                  function: idlab-fn:isNull(str = $(kortLabel))
+  # short label graad
+  graad-short-label:
+    sources:
+      - onderwijsstructuur
+    s: ostr:$(graad)-short-label
+    po:
+      - [a, skosxl:Label]
+      - [dct:type, label-type:SHORTLABEL~iri]
+      - p: skosxl:literalForm
+        o:
+          value: $(kortLabel)
+          language: nl
+    condition:
+      function: grel:boolean_and
+      parameters:
+        - parameter: grel:param_rep_b
+          value:
+            function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "graad")
+        - parameter: grel:param_rep_b
+          value:
+            function: grel:boolean_not
+            parameters:
+              - parameter: grel:bool_b
+                value:
+                  function: idlab-fn:isNull(str = $(kortLabel))
+  # short label leerjaar
+  leerjaar-short-label:
+    sources:
+      - onderwijsstructuur
+    s: ostr:$(leerjaar)-short-label
+    po:
+      - [a, skosxl:Label]
+      - [dct:type, label-type:SHORTLABEL~iri]
+      - p: skosxl:literalForm
+        o:
+          value: $(kortLabel)
+          language: nl
+    condition:
+      function: grel:boolean_and
+      parameters:
+        - parameter: grel:param_rep_b
+          value:
+            function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "leerjaar")
+        - parameter: grel:param_rep_b
+          value:
+            function: grel:boolean_not
+            parameters:
+              - parameter: grel:bool_b
+                value:
+                  function: idlab-fn:isNull(str = $(kortLabel))
+  # short label stroom
+  stroom-short-label:
+    sources:
+      - onderwijsstructuur
+    s: ostr:$(stroom)-short-label
+    po:
+      - [a, skosxl:Label]
+      - [dct:type, label-type:SHORTLABEL~iri]
+      - p: skosxl:literalForm
+        o:
+          value: $(kortLabel)
+          language: nl
+    condition:
+      function: grel:boolean_and
+      parameters:
+        - parameter: grel:param_rep_b
+          value:
+            function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "stroom")
+        - parameter: grel:param_rep_b
+          value:
+            function: grel:boolean_not
+            parameters:
+              - parameter: grel:bool_b
+                value:
+                  function: idlab-fn:isNull(str = $(kortLabel))
+  # short label finaliteit
+  finaliteit-short-label:
+    sources:
+      - onderwijsstructuur
+    s: ostr:$(finaliteit)-short-label
+    po:
+      - [a, skosxl:Label]
+      - [dct:type, label-type:SHORTLABEL~iri]
+      - p: skosxl:literalForm
+        o:
+          value: $(kortLabel)
+          language: nl
+    condition:
+      function: grel:boolean_and
+      parameters:
+        - parameter: grel:param_rep_b
+          value:
+            function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "finaliteit")
+        - parameter: grel:param_rep_b
+          value:
+            function: grel:boolean_not
+            parameters:
+              - parameter: grel:bool_b
+                value:
+                  function: idlab-fn:isNull(str = $(kortLabel))
+  # short label onderwijsvorm
+  onderwijsvorm-short-label:
+    sources:
+      - onderwijsstructuur
+    s: ostr:$(onderwijsvorm)-short-label
+    po:
+      - [a, skosxl:Label]
+      - [dct:type, label-type:SHORTLABEL~iri]
+      - p: skosxl:literalForm
+        o:
+          value: $(kortLabel)
+          language: nl
+    condition:
+      function: grel:boolean_and
+      parameters:
+        - parameter: grel:param_rep_b
+          value:
+            function: idlab-fn:equal(grel:valueParameter = $(mapping), grel:valueParameter2 = "onderwijsvorm")
+        - parameter: grel:param_rep_b
+          value:
+            function: grel:boolean_not
+            parameters:
+              - parameter: grel:bool_b
+                value:
+                  function: idlab-fn:isNull(str = $(kortLabel))

@@ -1,77 +1,77 @@
-mapping,niveau,subniveau,opleidingsvorm,graad,leerjaar,stroom,finaliteit,onderwijsvorm,label,definitie
-schema,,,,,,,,,thesaurus onderwijsstructuur,thesaurus onderwijsstructuur
-verzameling-onderwijsstructuur,,,,,,,,,onderwijsstructuur,onderwijsstructuur
-verzameling-niveau,,,,,,,,,onderwijsniveaus,onderwijsniveaus
-verzameling-subniveau,,,,,,,,,onderwijs subniveaus,onderwijs subniveaus
-verzameling-opleidingsvorm,,,,,,,,,opleidingsvormen,opleidingsvormen
-verzameling-graad,,,,,,,,,onderwijsgraden,onderwijsgraden
-verzameling-leerjaar,,,,,,,,,onderwijs leerjaren,onderwijs leerjaren
-verzameling-stroom,,,,,,,,,onderwijsstromen,onderwijsstromen
-verzameling-finaliteit,,,,,,,,,onderwijsfinaliteiten,onderwijsfinaliteiten
-verzameling-onderwijsvorm,,,,,,,,,onderwijsvormen,onderwijsvormen
-niveau,basisonderwijs,,,,,,,,basisonderwijs,basisonderwijs
-subniveau,basisonderwijs,kleuteronderwijs,,,,,,,kleuteronderwijs,kleuteronderwijs
-leerjaar-onder-subniveau,basisonderwijs,kleuteronderwijs,,,kleuter-3-jaar-of-jonger,,,,kleuter 3 jaar of jonger,kleuter 3 jaar of jonger
-leerjaar-onder-subniveau,basisonderwijs,kleuteronderwijs,,,kleuter-4-jaar,,,,kleuter 4 jaar,kleuter 4 jaar
-leerjaar-onder-subniveau,basisonderwijs,kleuteronderwijs,,,kleuter-5-jaar,,,,kleuter 5 jaar,kleuter 5 jaar
-subniveau,basisonderwijs,lager-onderwijs,,,,,,,lager onderwijs,lager onderwijs
-graad-onder-subniveau,basisonderwijs,lager-onderwijs,,lager-1e-graad,,,,,lager 1e graad,lager 1e graad
-leerjaar-onder-graad,basisonderwijs,lager-onderwijs,,lager-1e-graad,lager-1e-leerjaar,,,,lager 1e leerjaar,lager 1e leerjaar
-leerjaar-onder-graad,basisonderwijs,lager-onderwijs,,lager-1e-graad,lager-2e-leerjaar,,,,lager 2e leerjaar,lager 2e leerjaar
-graad-onder-subniveau,basisonderwijs,lager-onderwijs,,lager-2e-graad,,,,,lager 2e graad,lager 2e graad
-leerjaar-onder-graad,basisonderwijs,lager-onderwijs,,lager-2e-graad,lager-3e-leerjaar,,,,lager 3e leerjaar,lager 3e leerjaar
-leerjaar-onder-graad,basisonderwijs,lager-onderwijs,,lager-2e-graad,lager-4e-leerjaar,,,,lager 4e leerjaar,lager 4e leerjaar
-graad-onder-subniveau,basisonderwijs,lager-onderwijs,,lager-3e-graad,,,,,lager 3e graad,lager 3e graad
-leerjaar-onder-graad,basisonderwijs,lager-onderwijs,,lager-3e-graad,lager-5e-leerjaar,,,,lager 5e leerjaar,lager 5e leerjaar
-leerjaar-onder-graad,basisonderwijs,lager-onderwijs,,lager-3e-graad,lager-6e-leerjaar,,,,lager 6e leerjaar,lager 6e leerjaar
-niveau,secundair-onderwijs,,,,,,,,secundair onderwijs,secundair onderwijs
-graad-onder-niveau,secundair-onderwijs,,,secundair-1e-graad,,,,,secundair 1e graad,secundair 1e graad
-leerjaar-onder-graad,secundair-onderwijs,,,secundair-1e-graad,secundair-1e-leerjaar,,,,secundair 1e leerjaar,secundair 1e leerjaar
-leerjaar-onder-graad,secundair-onderwijs,,,secundair-1e-graad,secundair-2e-leerjaar,,,,secundair 2e leerjaar,secundair 2e leerjaar
-stroom,secundair-onderwijs,,,secundair-1e-graad,,secundair-1e-graad-a-stroom,,,secundair 1e graad a-stroom,secundair 1e graad a-stroom
-stroom,secundair-onderwijs,,,secundair-1e-graad,,secundair-1e-graad-b-stroom,,,secundair 1e graad b-stroom,secundair 1e graad b-stroom
-graad-onder-niveau,secundair-onderwijs,,,secundair-2e-graad,,,,,secundair 2e graad,secundair 2e graad
-leerjaar-onder-graad,secundair-onderwijs,,,secundair-2e-graad,secundair-3e-leerjaar,,,,secundair 3e leerjaar,secundair 3e leerjaar
-leerjaar-onder-graad,secundair-onderwijs,,,secundair-2e-graad,secundair-4e-leerjaar,,,,secundair 4e leerjaar,secundair 4e leerjaar
-finaliteit,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-doorstroom,,secundair 2e graad finaliteit doorstroom,secundair 2e graad finaliteit doorstroom
-onderwijsvorm,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-doorstroom,secundair-2e-graad-doorstroom-aso,secundair 2e graad finaliteit doorstroom aso,secundair 2e graad finaliteit doorstroom aso
-onderwijsvorm,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-doorstroom,secundair-2e-graad-doorstroom-tso,secundair 2e graad finaliteit doorstroom tso,secundair 2e graad finaliteit doorstroom tso
-onderwijsvorm,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-doorstroom,secundair-2e-graad-doorstroom-kso,secundair 2e graad finaliteit doorstroom kso,secundair 2e graad finaliteit doorstroom kso
-finaliteit,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-dubbel,,secundair 2e graad dubbele finaliteit,secundair 2e graad dubbele finaliteit
-onderwijsvorm,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-dubbel,secundair-2e-graad-dubbel-tso,secundair 2e graad dubbele finaliteit tso,secundair 2e graad dubbele finaliteit tso
-onderwijsvorm,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-dubbel,secundair-2e-graad-dubbel-kso,secundair 2e graad dubbele finaliteit kso,secundair 2e graad dubbele finaliteit kso
-finaliteit,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-arbeidsmarkt,,secundair 2e graad finaliteit arbeidsmarkt,secundair 2e graad finaliteit arbeidsmarkt
-onderwijsvorm,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-arbeidsmarkt,secundair-2e-graad-arbeidsmarkt-bso,secundair 2e graad finaliteit arbeidsmarkt bso,secundair 2e graad finaliteit arbeidsmarkt bso
-graad-onder-niveau,secundair-onderwijs,,,secundair-3e-graad,,,,,secundair 3e graad,secundair 3e graad
-leerjaar-onder-graad,secundair-onderwijs,,,secundair-3e-graad,secundair-5e-leerjaar,,,,secundair 5e leerjaar,secundair 5e leerjaar
-leerjaar-onder-graad,secundair-onderwijs,,,secundair-3e-graad,secundair-6e-leerjaar,,,,secundair 6e leerjaar,secundair 6e leerjaar
-finaliteit,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-doorstroom,,secundair 3e graad finaliteit doorstroom,secundair 3e graad finaliteit doorstroom
-onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-doorstroom,secundair-3e-graad-doorstroom-aso,secundair 3e graad finaliteit doorstroom aso,secundair 3e graad finaliteit doorstroom aso
-onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-doorstroom,secundair-3e-graad-doorstroom-tso,secundair 3e graad finaliteit doorstroom tso,secundair 3e graad finaliteit doorstroom tso
-onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-doorstroom,secundair-3e-graad-doorstroom-kso,secundair 3e graad finaliteit doorstroom kso,secundair 3e graad finaliteit doorstroom kso
-finaliteit,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-dubbel,,secundair 3e graad dubbele finaliteit,secundair 3e graad dubbele finaliteit
-onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-dubbel,secundair-3e-graad-dubbel-tso,secundair 3e graad dubbele finaliteit tso,secundair 3e graad dubbele finaliteit tso
-onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-dubbel,secundair-3e-graad-dubbel-kso,secundair 3e graad dubbele finaliteit kso,secundair 3e graad dubbele finaliteit kso
-finaliteit,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-arbeidsmarkt,,secundair 3e graad finaliteit arbeidsmarkt,secundair 3e graad finaliteit arbeidsmarkt
-onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-arbeidsmarkt,secundair-3e-graad-arbeidsmarkt-bso,secundair 3e graad finaliteit arbeidsmarkt bso,secundair 3e graad finaliteit arbeidsmarkt bso
-graad-onder-niveau,secundair-onderwijs,,,secundair-3e-graad-3e-leerjaar,,,,,secundair 3e graad 3e leerjaar,secundair 3e graad 3e leerjaar
-leerjaar-onder-graad,secundair-onderwijs,,,secundair-3e-graad-3e-leerjaar,secundair-7e-leerjaar,,,,secundair 7e leerjaar,secundair 7e leerjaar
-finaliteit,secundair-onderwijs,,,secundair-3e-graad-3e-leerjaar,,,secundair-3e-graad-3e-leerjaar-arbeidsmarkt,,secundair 3e graad 3e leerjaar finaliteit arbeidsmarkt,secundair 3e graad 3e leerjaar finaliteit arbeidsmarkt
-onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad-3e-leerjaar,,,secundair-3e-graad-3e-leerjaar-arbeidsmarkt,secundair-3e-graad-3e-leerjaar-arbeidsmarkt-bso,secundair 3e graad 3e leerjaar finaliteit arbeidsmarkt bso,secundair 3e graad 3e leerjaar finaliteit arbeidsmarkt bso
-niveau,buitengewoon-basisonderwijs,,,,,,,,buitengewoon basisonderwijs,buitengewoon basisonderwijs
-subniveau,buitengewoon-basisonderwijs,buitengewoon-kleuteronderwijs,,,,,,,buitengewoon kleuteronderwijs,buitengewoon kleuteronderwijs
-subniveau,buitengewoon-basisonderwijs,buitengewoon-lager-onderwijs,,,,,,,buitengewoon lager onderwijs,buitengewoon lager onderwijs
-niveau,buitengewoon-secundair-onderwijs,,,,,,,,buitengewoon secundair onderwijs,buitengewoon secundair onderwijs
-opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-1,,,,,,opleidingsvorm 1,opleidingsvorm 1
-opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-2,,,,,,opleidingsvorm 2,opleidingsvorm 2
-opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-3,,,,,,opleidingsvorm 3,opleidingsvorm 3
-opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-4,,,,,,opleidingsvorm 4,opleidingsvorm 4
-graad-onder-opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-4,buitengewoon-secundair-1e-graad,,,,,buitengewoon secundair 1e graad,buitengewoon secundair 1e graad
-graad-onder-opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-4,buitengewoon-secundair-2e-graad,,,,,buitengewoon secundair 2e graad,buitengewoon secundair 2e graad
-graad-onder-opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-4,buitengewoon-secundair-3e-graad,,,,,buitengewoon secundair 3e graad,buitengewoon secundair 3e graad
-graad-onder-opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-4,buitengewoon-secundair-3e-graad-3e-leerjaar,,,,,buitengewoon secundair 3e graad 3e leerjaar,buitengewoon secundair 3e graad 3e leerjaar
-niveau,volwassenenonderwijs,,,,,,,,volwassenenonderwijs,volwassenenonderwijs
-subniveau,volwassenenonderwijs,basiseducatie,,,,,,,basiseducatie,basiseducatie
-subniveau,volwassenenonderwijs,secundair-volwassenenonderwijs,,,,,,,secundair volwassenenonderwijs,secundair volwassenenonderwijs
-niveau,deeltijds-kunstonderwijs,,,,,,,,deeltijds kunstonderwijs,deeltijds kunstonderwijs
-niveau,hoger-onderwijs,,,,,,,,hoger onderwijs,hoger onderwijs
+mapping,niveau,subniveau,opleidingsvorm,graad,leerjaar,stroom,finaliteit,onderwijsvorm,label,definitie,kortLabel,versie
+schema,,,,,,,,,thesaurus onderwijsstructuur,thesaurus onderwijsstructuur,,1.0.0
+verzameling-onderwijsstructuur,,,,,,,,,onderwijsstructuur,onderwijsstructuur,,
+verzameling-niveau,,,,,,,,,onderwijsniveaus,onderwijsniveaus,,
+verzameling-subniveau,,,,,,,,,onderwijs subniveaus,onderwijs subniveaus,,
+verzameling-opleidingsvorm,,,,,,,,,opleidingsvormen,opleidingsvormen,,
+verzameling-graad,,,,,,,,,onderwijsgraden,onderwijsgraden,,
+verzameling-leerjaar,,,,,,,,,onderwijs leerjaren,onderwijs leerjaren,,
+verzameling-stroom,,,,,,,,,onderwijsstromen,onderwijsstromen,,
+verzameling-finaliteit,,,,,,,,,onderwijsfinaliteiten,onderwijsfinaliteiten,,
+verzameling-onderwijsvorm,,,,,,,,,onderwijsvormen,onderwijsvormen,,
+niveau,basisonderwijs,,,,,,,,basisonderwijs,basisonderwijs,,
+subniveau,basisonderwijs,kleuteronderwijs,,,,,,,kleuteronderwijs,kleuteronderwijs,,
+leerjaar-onder-subniveau,basisonderwijs,kleuteronderwijs,,,kleuter-3-jaar-of-jonger,,,,kleuter 3 jaar of jonger,kleuter 3 jaar of jonger,,
+leerjaar-onder-subniveau,basisonderwijs,kleuteronderwijs,,,kleuter-4-jaar,,,,kleuter 4 jaar,kleuter 4 jaar,,
+leerjaar-onder-subniveau,basisonderwijs,kleuteronderwijs,,,kleuter-5-jaar,,,,kleuter 5 jaar,kleuter 5 jaar,,
+subniveau,basisonderwijs,lager-onderwijs,,,,,,,lager onderwijs,lager onderwijs,,
+graad-onder-subniveau,basisonderwijs,lager-onderwijs,,lager-1e-graad,,,,,lager 1e graad,lager 1e graad,1e graad,
+leerjaar-onder-graad,basisonderwijs,lager-onderwijs,,lager-1e-graad,lager-1e-leerjaar,,,,lager 1e leerjaar,lager 1e leerjaar,1e leerjaar,
+leerjaar-onder-graad,basisonderwijs,lager-onderwijs,,lager-1e-graad,lager-2e-leerjaar,,,,lager 2e leerjaar,lager 2e leerjaar,2e leerjaar,
+graad-onder-subniveau,basisonderwijs,lager-onderwijs,,lager-2e-graad,,,,,lager 2e graad,lager 2e graad,2e graad,
+leerjaar-onder-graad,basisonderwijs,lager-onderwijs,,lager-2e-graad,lager-3e-leerjaar,,,,lager 3e leerjaar,lager 3e leerjaar,3e leerjaar,
+leerjaar-onder-graad,basisonderwijs,lager-onderwijs,,lager-2e-graad,lager-4e-leerjaar,,,,lager 4e leerjaar,lager 4e leerjaar,4e leerjaar,
+graad-onder-subniveau,basisonderwijs,lager-onderwijs,,lager-3e-graad,,,,,lager 3e graad,lager 3e graad,3e graad,
+leerjaar-onder-graad,basisonderwijs,lager-onderwijs,,lager-3e-graad,lager-5e-leerjaar,,,,lager 5e leerjaar,lager 5e leerjaar,5e leerjaar,
+leerjaar-onder-graad,basisonderwijs,lager-onderwijs,,lager-3e-graad,lager-6e-leerjaar,,,,lager 6e leerjaar,lager 6e leerjaar,6e leerjaar,
+niveau,secundair-onderwijs,,,,,,,,secundair onderwijs,secundair onderwijs,,
+graad-onder-niveau,secundair-onderwijs,,,secundair-1e-graad,,,,,secundair 1e graad,secundair 1e graad,1e graad,
+leerjaar-onder-graad,secundair-onderwijs,,,secundair-1e-graad,secundair-1e-leerjaar,,,,secundair 1e leerjaar,secundair 1e leerjaar,1e leerjaar,
+leerjaar-onder-graad,secundair-onderwijs,,,secundair-1e-graad,secundair-2e-leerjaar,,,,secundair 2e leerjaar,secundair 2e leerjaar,2e leerjaar,
+stroom,secundair-onderwijs,,,secundair-1e-graad,,secundair-1e-graad-a-stroom,,,secundair 1e graad a-stroom,secundair 1e graad a-stroom,a-stroom,
+stroom,secundair-onderwijs,,,secundair-1e-graad,,secundair-1e-graad-b-stroom,,,secundair 1e graad b-stroom,secundair 1e graad b-stroom,b-stroom,
+graad-onder-niveau,secundair-onderwijs,,,secundair-2e-graad,,,,,secundair 2e graad,secundair 2e graad,2e graad,
+leerjaar-onder-graad,secundair-onderwijs,,,secundair-2e-graad,secundair-3e-leerjaar,,,,secundair 3e leerjaar,secundair 3e leerjaar,3e leerjaar,
+leerjaar-onder-graad,secundair-onderwijs,,,secundair-2e-graad,secundair-4e-leerjaar,,,,secundair 4e leerjaar,secundair 4e leerjaar,4e leerjaar,
+finaliteit,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-doorstroom,,secundair 2e graad finaliteit doorstroom,secundair 2e graad finaliteit doorstroom,finaliteit doorstroom,
+onderwijsvorm,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-doorstroom,secundair-2e-graad-doorstroom-aso,secundair 2e graad finaliteit doorstroom aso,secundair 2e graad finaliteit doorstroom aso,aso,
+onderwijsvorm,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-doorstroom,secundair-2e-graad-doorstroom-tso,secundair 2e graad finaliteit doorstroom tso,secundair 2e graad finaliteit doorstroom tso,tso,
+onderwijsvorm,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-doorstroom,secundair-2e-graad-doorstroom-kso,secundair 2e graad finaliteit doorstroom kso,secundair 2e graad finaliteit doorstroom kso,kso,
+finaliteit,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-dubbel,,secundair 2e graad dubbele finaliteit,secundair 2e graad dubbele finaliteit,dubbele finaliteit,
+onderwijsvorm,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-dubbel,secundair-2e-graad-dubbel-tso,secundair 2e graad dubbele finaliteit tso,secundair 2e graad dubbele finaliteit tso,tso,
+onderwijsvorm,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-dubbel,secundair-2e-graad-dubbel-kso,secundair 2e graad dubbele finaliteit kso,secundair 2e graad dubbele finaliteit kso,kso,
+finaliteit,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-arbeidsmarkt,,secundair 2e graad finaliteit arbeidsmarkt,secundair 2e graad finaliteit arbeidsmarkt,finaliteit arbeidsmarkt,
+onderwijsvorm,secundair-onderwijs,,,secundair-2e-graad,,,secundair-2e-graad-arbeidsmarkt,secundair-2e-graad-arbeidsmarkt-bso,secundair 2e graad finaliteit arbeidsmarkt bso,secundair 2e graad finaliteit arbeidsmarkt bso,bso,
+graad-onder-niveau,secundair-onderwijs,,,secundair-3e-graad,,,,,secundair 3e graad,secundair 3e graad,3e graad,
+leerjaar-onder-graad,secundair-onderwijs,,,secundair-3e-graad,secundair-5e-leerjaar,,,,secundair 5e leerjaar,secundair 5e leerjaar,5e leerjaar,
+leerjaar-onder-graad,secundair-onderwijs,,,secundair-3e-graad,secundair-6e-leerjaar,,,,secundair 6e leerjaar,secundair 6e leerjaar,6e leerjaar,
+finaliteit,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-doorstroom,,secundair 3e graad finaliteit doorstroom,secundair 3e graad finaliteit doorstroom,finaliteit doorstroom,
+onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-doorstroom,secundair-3e-graad-doorstroom-aso,secundair 3e graad finaliteit doorstroom aso,secundair 3e graad finaliteit doorstroom aso,aso,
+onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-doorstroom,secundair-3e-graad-doorstroom-tso,secundair 3e graad finaliteit doorstroom tso,secundair 3e graad finaliteit doorstroom tso,tso,
+onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-doorstroom,secundair-3e-graad-doorstroom-kso,secundair 3e graad finaliteit doorstroom kso,secundair 3e graad finaliteit doorstroom kso,kso,
+finaliteit,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-dubbel,,secundair 3e graad dubbele finaliteit,secundair 3e graad dubbele finaliteit,dubbele finaliteit,
+onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-dubbel,secundair-3e-graad-dubbel-tso,secundair 3e graad dubbele finaliteit tso,secundair 3e graad dubbele finaliteit tso,tso,
+onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-dubbel,secundair-3e-graad-dubbel-kso,secundair 3e graad dubbele finaliteit kso,secundair 3e graad dubbele finaliteit kso,kso,
+finaliteit,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-arbeidsmarkt,,secundair 3e graad finaliteit arbeidsmarkt,secundair 3e graad finaliteit arbeidsmarkt,finaliteit arbeidsmarkt,
+onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad,,,secundair-3e-graad-arbeidsmarkt,secundair-3e-graad-arbeidsmarkt-bso,secundair 3e graad finaliteit arbeidsmarkt bso,secundair 3e graad finaliteit arbeidsmarkt bso,bso,
+graad-onder-niveau,secundair-onderwijs,,,secundair-3e-graad-3e-leerjaar,,,,,secundair 3e graad 3e leerjaar,secundair 3e graad 3e leerjaar,3e graad 3e leerjaar,
+leerjaar-onder-graad,secundair-onderwijs,,,secundair-3e-graad-3e-leerjaar,secundair-7e-leerjaar,,,,secundair 7e leerjaar,secundair 7e leerjaar,7e leerjaar,
+finaliteit,secundair-onderwijs,,,secundair-3e-graad-3e-leerjaar,,,secundair-3e-graad-3e-leerjaar-arbeidsmarkt,,secundair 3e graad 3e leerjaar finaliteit arbeidsmarkt,secundair 3e graad 3e leerjaar finaliteit arbeidsmarkt,finaliteit arbeidsmarkt,
+onderwijsvorm,secundair-onderwijs,,,secundair-3e-graad-3e-leerjaar,,,secundair-3e-graad-3e-leerjaar-arbeidsmarkt,secundair-3e-graad-3e-leerjaar-arbeidsmarkt-bso,secundair 3e graad 3e leerjaar finaliteit arbeidsmarkt bso,secundair 3e graad 3e leerjaar finaliteit arbeidsmarkt bso,bso,
+niveau,buitengewoon-basisonderwijs,,,,,,,,buitengewoon basisonderwijs,buitengewoon basisonderwijs,,
+subniveau,buitengewoon-basisonderwijs,buitengewoon-kleuteronderwijs,,,,,,,buitengewoon kleuteronderwijs,buitengewoon kleuteronderwijs,,
+subniveau,buitengewoon-basisonderwijs,buitengewoon-lager-onderwijs,,,,,,,buitengewoon lager onderwijs,buitengewoon lager onderwijs,,
+niveau,buitengewoon-secundair-onderwijs,,,,,,,,buitengewoon secundair onderwijs,buitengewoon secundair onderwijs,,
+opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-1,,,,,,buitengewoon secundair opleidingsvorm 1,buitengewoon secundair opleidingsvorm 1,opleidingsvorm 1,
+opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-2,,,,,,buitengewoon secundair opleidingsvorm 2,buitengewoon secundair opleidingsvorm 2,opleidingsvorm 2,
+opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-3,,,,,,buitengewoon secundair opleidingsvorm 3,buitengewoon secundair opleidingsvorm 3,opleidingsvorm 3,
+opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-4,,,,,,buitengewoon secundair opleidingsvorm 4,buitengewoon secundair opleidingsvorm 4,opleidingsvorm 4,
+graad-onder-opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-4,buitengewoon-secundair-1e-graad,,,,,buitengewoon secundair 1e graad,buitengewoon secundair 1e graad,1e graad,
+graad-onder-opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-4,buitengewoon-secundair-2e-graad,,,,,buitengewoon secundair 2e graad,buitengewoon secundair 2e graad,2e graad,
+graad-onder-opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-4,buitengewoon-secundair-3e-graad,,,,,buitengewoon secundair 3e graad,buitengewoon secundair 3e graad,3e graad,
+graad-onder-opleidingsvorm,buitengewoon-secundair-onderwijs,,opleidingsvorm-4,buitengewoon-secundair-3e-graad-3e-leerjaar,,,,,buitengewoon secundair 3e graad 3e leerjaar,buitengewoon secundair 3e graad 3e leerjaar,3e graad 3e leerjaar,
+niveau,volwassenenonderwijs,,,,,,,,volwassenenonderwijs,volwassenenonderwijs,,
+subniveau,volwassenenonderwijs,basiseducatie,,,,,,,basiseducatie,basiseducatie,,
+subniveau,volwassenenonderwijs,secundair-volwassenenonderwijs,,,,,,,secundair volwassenenonderwijs,secundair volwassenenonderwijs,,
+niveau,deeltijds-kunstonderwijs,,,,,,,,deeltijds kunstonderwijs,deeltijds kunstonderwijs,,
+niveau,hoger-onderwijs,,,,,,,,hoger onderwijs,hoger onderwijs,,
