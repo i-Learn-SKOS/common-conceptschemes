@@ -1,3 +1,6 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ocol: <https://w3id.org/onderwijs-vlaanderen/id/collectie/> .
+@prefix ostr: <https://w3id.org/onderwijs-vlaanderen/id/structuur/> .
 
 ocol:graad a skos:OrderedCollection ;
     skos:memberList ( ostr:lager-1e-graad ostr:lager-2e-graad ostr:lager-3e-graad ostr:secundair-1e-graad ostr:secundair-2e-graad ostr:secundair-3e-graad ostr:secundair-3e-graad-3e-leerjaar ostr:buitengewoon-secundair-1e-graad ostr:buitengewoon-secundair-2e-graad ostr:buitengewoon-secundair-3e-graad ostr:buitengewoon-secundair-3e-graad-3e-leerjaar) .

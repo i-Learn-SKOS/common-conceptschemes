@@ -33,8 +33,5 @@ node $YARRRML_PARSER -i ${FILE_IN} -o ${FILE_RML}
 echo "===== 2. rmlmapper ${FILE_RML} --> ${FILE_GENERATED}"
 java -jar $RML_MAPPER -m ${FILE_RML} -o ${FILE_GENERATED} -s turtle
 
-echo "===== 3. append ${FILE_ADDENDUM} --> ${FILE_GENERATED}"
-cat ${FILE_ADDENDUM} >> ${FILE_GENERATED}
-
-echo "===== 4. skosify ${FILE_GENERATED} --> ${FILE_OUT}"
-skosify -c ${FILE_SKOSIFY_CONFIG} -o ${FILE_OUT} ${FILE_GENERATED}
+echo "===== 3. skosify ${FILE_GENERATED}, ${FILE_ADDENDUM} --> ${FILE_OUT}"
+skosify -c ${FILE_SKOSIFY_CONFIG} -o ${FILE_OUT} ${FILE_GENERATED} ${FILE_ADDENDUM}
