@@ -3,6 +3,8 @@
 @prefix ovak: <https://w3id.org/onderwijs-vlaanderen/id/vak/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pav: <http://purl.org/pav/> .
+
 
 ocol:vak a skos:Collection,
         skos:OrderedCollection ;
@@ -1345,6 +1347,7 @@ ovak:zeemanschap a skos:Concept ;
     skos:topConceptOf ond:vak .
 
 ond:vak a skos:ConceptScheme ;
+    pav:version "1.0.0",
     skos:hasTopConcept ovak:aardrijkskunde,
         ovak:administratie,
         ovak:afwerking-bouw,

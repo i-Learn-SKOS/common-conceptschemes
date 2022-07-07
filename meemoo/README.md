@@ -1,3 +1,3 @@
 # Contributions from meemoo
 
-TODO something comparable to ../ilearn/README.md.
+Files here mainly given as historic reference input.
