@@ -88,10 +88,10 @@ ocol:onderwijsvorm a skos:Collection ;
 
 ocol:opleidingsvorm a skos:Collection ;
     skos:definition "opleidingsvormen"@nl ;
-    skos:member ostr:opleidingsvorm-1,
-        ostr:opleidingsvorm-2,
-        ostr:opleidingsvorm-3,
-        ostr:opleidingsvorm-4 ;
+    skos:member ostr:buitengewoon-secundair-opleidingsvorm-1,
+        ostr:buitengewoon-secundair-opleidingsvorm-2,
+        ostr:buitengewoon-secundair-opleidingsvorm-3,
+        ostr:buitengewoon-secundair-opleidingsvorm-4 ;
     skos:prefLabel "opleidingsvormen"@nl .
 
 ocol:stroom a skos:Collection ;
@@ -112,6 +112,10 @@ ocol:structuur a skos:Collection ;
         ostr:buitengewoon-secundair-3e-graad,
         ostr:buitengewoon-secundair-3e-graad-3e-leerjaar,
         ostr:buitengewoon-secundair-onderwijs,
+        ostr:buitengewoon-secundair-opleidingsvorm-1,
+        ostr:buitengewoon-secundair-opleidingsvorm-2,
+        ostr:buitengewoon-secundair-opleidingsvorm-3,
+        ostr:buitengewoon-secundair-opleidingsvorm-4,
         ostr:deeltijds-kunstonderwijs,
         ostr:hoger-onderwijs,
         ostr:kleuter-3-jaar-of-jonger,
@@ -128,10 +132,6 @@ ocol:structuur a skos:Collection ;
         ostr:lager-5e-leerjaar,
         ostr:lager-6e-leerjaar,
         ostr:lager-onderwijs,
-        ostr:opleidingsvorm-1,
-        ostr:opleidingsvorm-2,
-        ostr:opleidingsvorm-3,
-        ostr:opleidingsvorm-4,
         ostr:secundair-1e-graad,
         ostr:secundair-1e-graad-a-stroom,
         ostr:secundair-1e-graad-b-stroom,
@@ -180,19 +180,19 @@ ocol:subniveau a skos:Collection ;
         ostr:secundair-volwassenenonderwijs ;
     skos:prefLabel "onderwijs subniveaus"@nl .
 
-ostr:opleidingsvorm-1-short-label a skosxl:Label ;
+ostr:buitengewoon-secundair-opleidingsvorm-1-short-label a skosxl:Label ;
     dct:type label-type:SHORTLABEL ;
     skosxl:literalForm "opleidingsvorm 1"@nl .
 
-ostr:opleidingsvorm-2-short-label a skosxl:Label ;
+ostr:buitengewoon-secundair-opleidingsvorm-2-short-label a skosxl:Label ;
     dct:type label-type:SHORTLABEL ;
     skosxl:literalForm "opleidingsvorm 2"@nl .
 
-ostr:opleidingsvorm-3-short-label a skosxl:Label ;
+ostr:buitengewoon-secundair-opleidingsvorm-3-short-label a skosxl:Label ;
     dct:type label-type:SHORTLABEL ;
     skosxl:literalForm "opleidingsvorm 3"@nl .
 
-ostr:opleidingsvorm-4-short-label a skosxl:Label ;
+ostr:buitengewoon-secundair-opleidingsvorm-4-short-label a skosxl:Label ;
     dct:type label-type:SHORTLABEL ;
     skosxl:literalForm "opleidingsvorm 4"@nl .
 
@@ -303,32 +303,53 @@ ostr:buitengewoon-lager-onderwijs a skos:Concept ;
     skos:prefLabel "buitengewoon lager onderwijs"@nl .
 
 ostr:buitengewoon-secundair-1e-graad a skos:Concept ;
-    skos:broader ostr:opleidingsvorm-4 ;
+    skos:broader ostr:buitengewoon-secundair-opleidingsvorm-4 ;
     skos:definition "buitengewoon secundair 1e graad"@nl ;
     skos:inScheme ond:structuur ;
     skos:prefLabel "buitengewoon secundair 1e graad"@nl ;
     skosxl:altLabel ostr:buitengewoon-secundair-1e-graad-short-label .
 
 ostr:buitengewoon-secundair-2e-graad a skos:Concept ;
-    skos:broader ostr:opleidingsvorm-4 ;
+    skos:broader ostr:buitengewoon-secundair-opleidingsvorm-4 ;
     skos:definition "buitengewoon secundair 2e graad"@nl ;
     skos:inScheme ond:structuur ;
     skos:prefLabel "buitengewoon secundair 2e graad"@nl ;
     skosxl:altLabel ostr:buitengewoon-secundair-2e-graad-short-label .
 
 ostr:buitengewoon-secundair-3e-graad a skos:Concept ;
-    skos:broader ostr:opleidingsvorm-4 ;
+    skos:broader ostr:buitengewoon-secundair-opleidingsvorm-4 ;
     skos:definition "buitengewoon secundair 3e graad"@nl ;
     skos:inScheme ond:structuur ;
     skos:prefLabel "buitengewoon secundair 3e graad"@nl ;
     skosxl:altLabel ostr:buitengewoon-secundair-3e-graad-short-label .
 
 ostr:buitengewoon-secundair-3e-graad-3e-leerjaar a skos:Concept ;
-    skos:broader ostr:opleidingsvorm-4 ;
+    skos:broader ostr:buitengewoon-secundair-opleidingsvorm-4 ;
     skos:definition "buitengewoon secundair 3e graad 3e leerjaar"@nl ;
     skos:inScheme ond:structuur ;
     skos:prefLabel "buitengewoon secundair 3e graad 3e leerjaar"@nl ;
     skosxl:altLabel ostr:buitengewoon-secundair-3e-graad-3e-leerjaar-short-label .
+
+ostr:buitengewoon-secundair-opleidingsvorm-1 a skos:Concept ;
+    skos:broader ostr:buitengewoon-secundair-onderwijs ;
+    skos:definition "buitengewoon secundair opleidingsvorm 1"@nl ;
+    skos:inScheme ond:structuur ;
+    skos:prefLabel "buitengewoon secundair opleidingsvorm 1"@nl ;
+    skosxl:altLabel ostr:buitengewoon-secundair-opleidingsvorm-1-short-label .
+
+ostr:buitengewoon-secundair-opleidingsvorm-2 a skos:Concept ;
+    skos:broader ostr:buitengewoon-secundair-onderwijs ;
+    skos:definition "buitengewoon secundair opleidingsvorm 2"@nl ;
+    skos:inScheme ond:structuur ;
+    skos:prefLabel "buitengewoon secundair opleidingsvorm 2"@nl ;
+    skosxl:altLabel ostr:buitengewoon-secundair-opleidingsvorm-2-short-label .
+
+ostr:buitengewoon-secundair-opleidingsvorm-3 a skos:Concept ;
+    skos:broader ostr:buitengewoon-secundair-onderwijs ;
+    skos:definition "buitengewoon secundair opleidingsvorm 3"@nl ;
+    skos:inScheme ond:structuur ;
+    skos:prefLabel "buitengewoon secundair opleidingsvorm 3"@nl ;
+    skosxl:altLabel ostr:buitengewoon-secundair-opleidingsvorm-3-short-label .
 
 ostr:deeltijds-kunstonderwijs a skos:Concept ;
     skos:definition "deeltijds kunstonderwijs"@nl ;
@@ -341,27 +362,6 @@ ostr:hoger-onderwijs a skos:Concept ;
     skos:inScheme ond:structuur ;
     skos:prefLabel "hoger onderwijs"@nl ;
     skos:topConceptOf ond:structuur .
-
-ostr:opleidingsvorm-1 a skos:Concept ;
-    skos:broader ostr:buitengewoon-secundair-onderwijs ;
-    skos:definition "buitengewoon secundair opleidingsvorm 1"@nl ;
-    skos:inScheme ond:structuur ;
-    skos:prefLabel "buitengewoon secundair opleidingsvorm 1"@nl ;
-    skosxl:altLabel ostr:opleidingsvorm-1-short-label .
-
-ostr:opleidingsvorm-2 a skos:Concept ;
-    skos:broader ostr:buitengewoon-secundair-onderwijs ;
-    skos:definition "buitengewoon secundair opleidingsvorm 2"@nl ;
-    skos:inScheme ond:structuur ;
-    skos:prefLabel "buitengewoon secundair opleidingsvorm 2"@nl ;
-    skosxl:altLabel ostr:opleidingsvorm-2-short-label .
-
-ostr:opleidingsvorm-3 a skos:Concept ;
-    skos:broader ostr:buitengewoon-secundair-onderwijs ;
-    skos:definition "buitengewoon secundair opleidingsvorm 3"@nl ;
-    skos:inScheme ond:structuur ;
-    skos:prefLabel "buitengewoon secundair opleidingsvorm 3"@nl ;
-    skosxl:altLabel ostr:opleidingsvorm-3-short-label .
 
 ostr:secundair-1e-graad-a-stroom a skos:Concept ;
     skos:broader ostr:secundair-1e-graad ;
@@ -726,14 +726,14 @@ ostr:secundair-3e-graad-doorstroom a skos:Concept ;
 ostr:buitengewoon-secundair-onderwijs a skos:Concept ;
     skos:definition "buitengewoon secundair onderwijs"@nl ;
     skos:inScheme ond:structuur ;
-    skos:narrower ostr:opleidingsvorm-1,
-        ostr:opleidingsvorm-2,
-        ostr:opleidingsvorm-3,
-        ostr:opleidingsvorm-4 ;
+    skos:narrower ostr:buitengewoon-secundair-opleidingsvorm-1,
+        ostr:buitengewoon-secundair-opleidingsvorm-2,
+        ostr:buitengewoon-secundair-opleidingsvorm-3,
+        ostr:buitengewoon-secundair-opleidingsvorm-4 ;
     skos:prefLabel "buitengewoon secundair onderwijs"@nl ;
     skos:topConceptOf ond:structuur .
 
-ostr:opleidingsvorm-4 a skos:Concept ;
+ostr:buitengewoon-secundair-opleidingsvorm-4 a skos:Concept ;
     skos:broader ostr:buitengewoon-secundair-onderwijs ;
     skos:definition "buitengewoon secundair opleidingsvorm 4"@nl ;
     skos:inScheme ond:structuur ;
@@ -742,7 +742,7 @@ ostr:opleidingsvorm-4 a skos:Concept ;
         ostr:buitengewoon-secundair-3e-graad,
         ostr:buitengewoon-secundair-3e-graad-3e-leerjaar ;
     skos:prefLabel "buitengewoon secundair opleidingsvorm 4"@nl ;
-    skosxl:altLabel ostr:opleidingsvorm-4-short-label .
+    skosxl:altLabel ostr:buitengewoon-secundair-opleidingsvorm-4-short-label .
 
 ostr:secundair-onderwijs a skos:Concept ;
     skos:definition "secundair onderwijs"@nl ;
