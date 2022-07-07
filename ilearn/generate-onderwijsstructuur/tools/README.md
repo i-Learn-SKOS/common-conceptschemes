@@ -19,7 +19,7 @@ deactivate
 ```
 
 ### 1.3 - YARRRML
-Download the right versie of the YARRRML parser (https://github.com/RMLio/yarrrml-parser.git) in this directory.
+Download the right version of the YARRRML parser (https://github.com/RMLio/yarrrml-parser.git) in this directory.
 This script does it for you:
 ```shell
 ./download-yarrrml.sh
