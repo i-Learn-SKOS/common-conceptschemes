@@ -1347,7 +1347,7 @@ ovak:zeemanschap a skos:Concept ;
     skos:topConceptOf ond:vak .
 
 ond:vak a skos:ConceptScheme ;
-    pav:version "1.0.0",
+    pav:version "1.0.0" ;
     skos:hasTopConcept ovak:aardrijkskunde,
         ovak:administratie,
         ovak:afwerking-bouw,
